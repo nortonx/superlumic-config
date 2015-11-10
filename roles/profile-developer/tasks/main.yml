@@ -12,15 +12,15 @@
     - htop-osx
     - watch
     - rsync
-    - git-flow
-    - ant
+    # - git-flow
+    # - ant
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
   with_items:
     - imageoptim
-    - phpstorm
+    - intellij-idea-ce
     - sequel-pro
     - java6
-    - java7
-    - java
+    # - java7
+    # - java
